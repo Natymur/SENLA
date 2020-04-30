@@ -3,16 +3,15 @@ package lesson1;
 public class Test {
     public static void main(String[] args) {
 
-        Siamese myCat = new Siamese();
+        Cat cat = new Cat("Saimon", "white", 2,6);
 
-        System.out.println("Мой цвет " + myCat.color + ", я могу прожить " + myCat.getMaxAge() + " лет, если ты меня будешь любить и я могу весить " + myCat.weight + " кг, если ты меня будешь хорошо кормить :)");
-        System.out.println("А сейчас я покажу тебе всё, на что я способен:");
-        myCat.voice();
-        myCat.run();
-        myCat.jump();
+        System.out.println("My cat\'s name "+ cat.getName() +", his color is "+ cat.getColor()+ ", he is " + cat.getAge() + " years old and his weight is " + cat.getWeight());
+        System.out.println(cat.getName() + " can:");
+        cat.voice();
+        cat.run();
 
-
-
+        Cat cat1 = new Cat();
+        System.out.println(cat1.getName() + cat1.getAge());
 
     }
 }
