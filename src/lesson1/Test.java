@@ -10,8 +10,8 @@ public class Test {
         cat.voice();
         cat.run();
 
-        Cat cat1 = new Cat();
-        System.out.println(cat1.getName() + cat1.getAge());
 
+        Cat cat2 = new Cat("Vasiliy","black");
+        System.out.println("Name: " + cat2.getName() + ", color: "+ cat2.getColor() + ", age: " + cat2.getAge() + ", weight: " + cat2.getWeight());
     }
 }
